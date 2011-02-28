@@ -1,0 +1,36 @@
+<% form_for @assets do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :model %><br />
+    <%= f.text_area :model %>
+  </p>
+  <p>
+    <%= f.label :serialnumber %><br />
+    <%= f.text_field :serialnumber %>
+  </p>
+  <p>
+    <%= f.label :inventorynumber %><br />
+    <%= f.text_field :inventorynumber %>
+  </p>
+  <p>
+    <%= f.label :make %><br />
+    <%= f.text_area :make %>
+  </p>
+  <p>
+    <%= f.label :location %><br />
+    <%= f.text_area :location %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_area :name %>
+  </p>
+  <p>
+    <%= f.label :purchaseorder %><br />
+    <%= f.text_field :purchaseorder %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

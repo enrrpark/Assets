@@ -1,0 +1,34 @@
+<% title "Assets" %>
+
+
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Model</th>
+    <th>Serialnumber</th>
+    <th>Inventorynumber</th>
+    <th>Make</th>
+    <th>Location</th>
+    <th>Name</th>
+    <th>Purchaseorder</th>
+  </tr>
+  <% for assets in @assets %>
+    <tr>
+
+      <td><%=h assets.title %></td>
+      <td><%=h assets.model %></td>
+      <td><%=h assets.serialnumber %></td>
+      <td><%=h assets.inventorynumber %></td>
+      <td><%=h assets.make %></td>
+      <td><%=h assets.location %></td>
+      <td><%=h assets.name %></td>
+      <td><%=h assets.purchaseorder %></td>
+      <td><%= link_to "Show", assets %></td>
+      <td><%= link_to "Edit", edit_assets_path(assets) %></td>
+      <td><%= link_to "Destroy", assets, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+

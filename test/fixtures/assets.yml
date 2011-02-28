@@ -1,0 +1,19 @@
+one:
+  title: MyString
+  model: MyText
+  serialnumber: 
+  inventorynumber: 
+  make: MyText
+  location: MyText
+  name: MyText
+  purchaseorder: 
+
+two:
+  title: MyString
+  model: MyText
+  serialnumber: 
+  inventorynumber: 
+  make: MyText
+  location: MyText
+  name: MyText
+  purchaseorder: 
